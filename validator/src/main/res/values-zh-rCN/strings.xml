@@ -1,0 +1,14 @@
+<resources>
+    <string name="errors_required">%1$s是必须的</string>
+    <string name="errors_minlength">%1$s不能少于%2$d字符</string>
+    <string name="errors_maxlength">%1$s不能多于%2$d字符</string>
+    <string name="errors_mask">%1$s无效</string>
+    <string name="errors_isInteger">%1$s必须是整数</string>
+    <string name="errors_isDouble">%1$s必须是浮点数</string>
+    <string name="errors_isDate">%1$s不是日期类型</string>
+    <string name="errors_range">%1$s不在%2$d和%3$d之间</string>
+    <string name="errors_intRange">%1$s不在%2$d和%3$d之间</string>
+    <string name="errors_doubleRange">%1$s不在%2$d和%3$d之间</string>
+    <string name="errors_isEmail">%1$s不是有效的邮件地址</string>
+    <string name="errors_isUrl">%1$s不是有效的网址</string>
+</resources>
