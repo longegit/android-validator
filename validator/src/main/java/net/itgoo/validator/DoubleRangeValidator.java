@@ -30,7 +30,7 @@ public class DoubleRangeValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         try {
             if (TextUtils.isEmpty(value)) {
                 return true;

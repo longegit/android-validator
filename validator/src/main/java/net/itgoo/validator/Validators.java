@@ -189,6 +189,16 @@ public class Validators {
         return results;
     }
 
+    public List<ValidatorResult> valid(String value, Validator[] validators) {
+        final List<ValidatorResult> results = new ArrayList<>();
+        for (final Validator val : validators) {
+            if (!val.condition(value)) {
+                results.add(new ValidatorResult(null, val.getMessage()));
+            }
+        }
+        return results;
+    }
+
     /** Test valid for view */
     public boolean isValid(final View v) {
         final ValidatorResult result = execute(v);

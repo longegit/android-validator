@@ -23,4 +23,5 @@ public interface Validator {
 
     public boolean isValid(View v);
 
+    public boolean condition(String value);
 }

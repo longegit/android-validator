@@ -37,7 +37,7 @@ public class StringContainValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         if (mCount != -1) {
             int count = 0;
             for (final char c : value.toCharArray()) {

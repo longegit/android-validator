@@ -27,7 +27,7 @@ public class MinLengthValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         return !TextUtils.isEmpty(value) && value.length() >= mMin;
     }
 

@@ -42,6 +42,4 @@ public abstract class BaseValidator implements Validator {
 
         return false;
     }
-
-    abstract protected boolean condition(String value);
 }

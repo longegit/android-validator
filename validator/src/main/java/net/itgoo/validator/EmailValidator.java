@@ -28,7 +28,7 @@ public class EmailValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         return TextUtils.isEmpty(value) || mValidator.isValid(value);
     }
 

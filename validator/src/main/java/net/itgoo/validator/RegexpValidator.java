@@ -13,8 +13,7 @@ public class RegexpValidator extends BaseValidator {
     }
     
     @Override
-    protected boolean condition(String value) {
-        // TODO Auto-generated method stub
+    public boolean condition(String value) {
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher = pattern.matcher(value);
         return matcher.matches();

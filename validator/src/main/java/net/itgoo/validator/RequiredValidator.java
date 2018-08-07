@@ -24,7 +24,7 @@ public class RequiredValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(String value) {
+    public boolean condition(String value) {
         value = value.trim()
                 .replaceAll("^[\\s" + IDEOGRAPHICS_SPACE + "]*", "")
                 .replaceAll("[\\s" + IDEOGRAPHICS_SPACE + "]*$", "");

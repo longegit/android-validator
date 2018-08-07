@@ -17,7 +17,7 @@ public class CreditCardValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(String value) {
+    public boolean condition(String value) {
         return TextUtils.isEmpty(value) || mValidator.isValid(value);
     }
 }

@@ -29,7 +29,7 @@ public class IntRangeValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         if (TextUtils.isEmpty(value)) {
             return true;
         }

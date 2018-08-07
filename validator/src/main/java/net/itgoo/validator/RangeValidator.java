@@ -29,7 +29,7 @@ public class RangeValidator extends BaseValidator {
     }
 
     @Override
-    protected boolean condition(final String value) {
+    public boolean condition(final String value) {
         return TextUtils.isEmpty(value) || (mMin <= value.length() && value.length() <= mMax);
     }
 
